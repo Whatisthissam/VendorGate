@@ -1,0 +1,17 @@
+{
+  "name": "vendorgate-monorepo",
+  "version": "1.0.0",
+  "description": "VendorGate - Vendor Onboarding & Purchase Order Management Portal (Academic Prototype)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node start-dev.js",
+    "start": "node start-dev.js",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "test": "node tests/test-12-frs.js && node tests/test-boundaries.js && node tests/test-role-isolation.js",
+    "test:fr": "node tests/test-12-frs.js",
+    "test:boundaries": "node tests/test-boundaries.js",
+    "test:roles": "node tests/test-role-isolation.js"
+  }
+}
